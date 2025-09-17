@@ -216,6 +216,13 @@ h2 {
   margin-top: 50px;
 }
 
+.specifikationer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+}
 
 .insta-feed {
   height: 460px;

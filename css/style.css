@@ -1,144 +1,215 @@
 
 
+
+
+
+
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fbfbfb;
+  margin: 60px 60px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #F9F1E3;
 }
 
-/* Navbar */
-.navbar {
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;         
+  overflow: hidden; 
+  background-color: aqua;  /* midlertidig farve til at debugge */
+  z-index: -1;             /* læg videoen bag alt andet */
+}
+
+.video-container #myVideo {
+  position: absolute;       /* vigtigt */
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;        
+}
+
+
+
+header {
   display: flex;
-  justify-content: space-between; /* Placerer venstre - midt - højre */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:start;
+  position: relative;
+  height: 65vh;
+}
+
+
+.top-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+}
+
+
+.menu-container {
+  display: flex;
   align-items: center;
-}
-
-/* Logo i midten */
-.logo {
-  flex: 1;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  height: 80px;
-}
-
-/* Burgermenu og shop ikon */
-.shop-icon {
-  display: flex;              
-  gap: 10px;                  /* Afstand mellem dem */
-  align-items: center;        /*vertikalt DISPLAYFLEX*/
+  justify-content: center;
   cursor: pointer;
 }
 
-.menu-icon {
+.menu-container svg {
+  margin-right: 5px;
+}
+
+
+ul {
+  list-style: none;
   display: flex;
-  align-items: center;
-  gap: 8px; /* lidt luft mellem ikon og tekst */
 }
 
-.icon {
-    height: 30px;
-    
+ul li {
+  margin-right: 20px;
 }
 
-.front-image {
-    display: flex;
-    justify-content: center;  /*vertikalt HUSK DISPLAYFLEX */
-    position: relative;
-    
-}
-
-.front-text {
+.logo {
+  height: 120px;
+  width: 120px;
+  transform: translate(-50%, -50%); /* træk logo tilbage så det er præcist midt */
+  left: 50%;
+  top: 5%;
+  margin-top: 10px;
   position: absolute;
-  top: 50%;
-  left: 6%;
-  color: #000;
-  text-align: left;     /* venstrestil tekst */
-  width: 430px;
 }
 
-.front-text h1 {
-  font-size: 3rem;
-  margin: 0;            /* fjern default margin */
+
+.hero-section {
+  margin-left: 50px;
 }
 
-.front-text p {
-  font-size: 1.2rem;
-  margin-top: 10px;     /* lidt luft under overskriften */
+h1 {
+  font-size: 60px;
+  margin: 0px 0;
 }
+
+h2 {
+  margin: 0px 0;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight:300;
+  line-height: 35px;
+  letter-spacing: 2px;
+}
+
+
+.udforsk-button {
+  padding: 14px 30px;
+  background: none;
+  border-radius: 20px;
+  background-color: #212427;
+  color: #F5F4F0;
+  border: none;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: 
+    /* Radial i midten */
+    radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.1) 30%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    /* Linear fade i bunden */
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 70%,   /* gennemsigtig */
+      #F9F1E3 100%           /* farve i bunden */
+    );
+
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+
 
 .forskellige-farver {
   display: flex;
-  justify-content: space-between; /* Placerer venstre - midt - højre i midsten atigt */
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
-  padding-left: 230px;    /*luft i siderne */
-  padding-right: 230px;
+  position: absolute;
+  bottom: -400px; 
+  left: 0px; 
 }
+
 
 .lumina-colors {
   display: flex;
-  height: 180px;
-  border-radius: 100px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth effekt */
-  cursor: pointer; /* viser at billedet kan interageres med */
+  height: 250px;
+  border-radius: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; 
 }
 
-.lumina-colors:hover {
-  transform: scale(1.05); /* gør billedet lidt større */
+.lumina-color-product:hover {
+  transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0,0,0,0.15); 
 }
 
 .lumina-color-product {
   display: flex;
+  position: relative;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  width: fit-content;
+    border-radius: 200px;
+     transition: 
+    transform 0.3s ease,      
+    box-shadow 0.3s ease;  
+
 }
 
-h1 {
-  font-size: 2.4rem;        
-  font-weight: 400;         
-  color: #111;              
-  margin-bottom: 0.5rem;    
-  letter-spacing: -0.5px;   
+.lumina-color-product img {
+  height: 300px;
+  width: 300px;
 }
 
-/* tekst med totebag */
-p {
-  font-size: 1rem;          
-  line-height: 1.6;         
-  color: #555;              
-  margin-bottom: 1.2rem;    
-  max-width: 60ch;          
-}
-/*footeren*/
-.information {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/*cta knappen*/
-.cta-button {
-  display: inline-block;
-  padding: 14px 32px;
-  background-color: transparent; /* gennemsigtig */
-  color: #111;                   /* sort tekst */
-  font-size: 1.1rem;
-  font-weight: 500;
-  border: 2px solid #111;        /* sort kant */
-  border-radius: 50px;           /* rundet form */
-  text-decoration: none;         /* fjern underline */
-  transition: all 0.3s ease;
+.lumina-color-product p {
   cursor: pointer;
-
-   /* flytter knappen horisontalt */
-  margin-left: 70px;  /* rykker lidt til højre */
+  font-weight: bold;
+  position: absolute;
+  bottom: 5px;
+  padding: 10px;
+  border-radius: 100px;
 }
 
 
 
-.cta-button:hover {
-  background-color: #111; /* sort baggrund */
-  color: #fff;            /* hvid tekst */
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+.reviews-container {
+   margin-top: 35%;
+   text-align: center;
 }
+
+.reviews-container img {
+  border-radius: 100px;
+}
+
+
+
+
+
+
+

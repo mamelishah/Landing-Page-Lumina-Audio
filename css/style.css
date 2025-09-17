@@ -293,9 +293,25 @@ box-sizing: border-box;
   margin-top: 50px;
 }
 
+.specifikationer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+}
 
 .insta-feed {
   height: 460px;
   width: 400px;
 }
 
+h3 {
+  margin: 60px 0;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight:300;
+  line-height: 35px;
+  letter-spacing: 2px;
+  text-align: center;
+}

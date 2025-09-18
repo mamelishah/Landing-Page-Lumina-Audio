@@ -64,7 +64,7 @@ header {
 }
 
 
-ul {
+ nav ul {
   list-style: none;
   display: flex;
 }
@@ -76,7 +76,7 @@ ul li {
 .logo {
   height: 120px;
   width: 120px;
-  transform: translate(-50%, -50%); /* træk logo tilbage så det er præcist midt */
+  transform: translate(-50%, -50%); 
   left: 50%;
   top: 5%;
   margin-top: 10px;
@@ -122,17 +122,15 @@ h2 {
   height: 100%;
 
   background: 
-    /* Radial i midten */
     radial-gradient(
       circle,
       rgba(0, 0, 0, 0.1) 30%,
       rgba(0, 0, 0, 0.1) 100%
     ),
-    /* Linear fade i bunden */
     linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0) 70%,   /* gennemsigtig */
-      #F9F1E3 100%           /* farve i bunden */
+      rgba(0, 0, 0, 0) 70%,  
+      #F9F1E3 100%           
     );
 
   pointer-events: none;
@@ -204,13 +202,12 @@ h2 {
   border-radius: 100px;
 }
 
-{box-sizing: border-box; }
 
 .site-footer {
   background: #f8f5f4;
   padding: 48px 0px;
   width: 100%;
-  margin-top: 80px;        /*afstand til Trustpilot reviews*/
+  margin-top: 80px;       
 
 position: relative;
 left: 50%;
@@ -222,59 +219,55 @@ width: 100vw;
 box-sizing: border-box;
 }
 
-/* centreret indre blok der holder kolonnerne */
 .footer-inner {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
-  flex-direction: row;       /* to kolonner ved siden af hinanden */
-  gap: 140px;                /* afstand mellem kolonnerne - gap for at justere */
+  flex-direction: row;       
+  gap: 140px;                
   align-items: flex-start;
   justify-content: center;
   background: transparent;
   box-sizing: border-box;
 }
 
-/* hver kolonne stables internt lodret */
 .footer-column {
-  min-width: 220px;          /* sikrer at kolonnerne får passende bredde */
+  min-width: 220px;         
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
 }
 
-/* OVERRIDES for at forhindre global CSS i at lave inline/horisontalt flow */
+
 .column-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: block !important;   /* tvinger vertikal opførsel */
+  display: block !important;  
 }
 
 .column-list li {
-  display: block !important;   /* hver li bliver en blok på egen linje */
-  margin: 10px 0;              /* afstand mellem links */
+  display: block !important; 
+  margin: 10px 0;             
 }
 
-/* gør links til blokniveau så de ikke flyder ved siden af hinanden */
 .column-list li a {
   display: block !important;
   text-decoration: none;
   color: #000;
-  font-size: 18px;            /* justér fontstørrelsen */
+  font-size: 18px;          
   line-height: 1.2;
 }
 
-/* overskriftstyling */
+
 .footer-column h4 {
   font-size: 24px;
   font-weight: 700;
   margin: 0 0 18px;
 }
 
-/* hover */
 .column-list li a:hover {
   text-decoration: underline;
 }
@@ -313,13 +306,12 @@ h3 {
   text-align: center;
 }
 
-{box-sizing: border-box; }
 
 .site-footer {
   background: #f8f5f4;
   padding: 48px 0px;
   width: 100%;
-  margin-top: 80px;        /*afstand til Trustpilot reviews*/
+  margin-top: 80px;      
 
 position: relative;
 left: 50%;
@@ -331,23 +323,21 @@ width: 100vw;
 box-sizing: border-box;
 }
 
-/* centreret indre blok der holder kolonnerne */
 .footer-inner {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
-  flex-direction: row;       /* to kolonner ved siden af hinanden */
-  gap: 140px;                /* afstand mellem kolonnerne - gap for at justere */
+  flex-direction: row;       
+  gap: 140px;               
   align-items: flex-start;
   justify-content: center;
   background: transparent;
   box-sizing: border-box;
 }
 
-/* hver kolonne stables internt lodret */
 .footer-column {
-  min-width: 220px;          /* sikrer at kolonnerne får passende bredde */
+  min-width: 220px;        
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -358,7 +348,7 @@ box-sizing: border-box;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: block !important;   /* tvinger vertikal opførsel */
+  display: block !important;   
 }
 
 .column-list li {
@@ -668,7 +658,6 @@ bottom: 80%;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-{box-sizing: border-box; }
 
 .site-footer {
   background: #f8f5f4;
@@ -783,7 +772,7 @@ h3 {
   background: #c3b9a7;
   padding: 48px 0px;
   width: 100%;
-  margin-top: 80px;        /*afstand til Trustpilot reviews*/
+  margin-top: 80px;       
 
 position: relative;
 left: 50%;
@@ -795,23 +784,21 @@ width: 100vw;
 box-sizing: border-box;
 }
 
-/* centreret indre blok der holder kolonnerne */
 .footer-inner {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
-  flex-direction: row;       /* to kolonner ved siden af hinanden */
-  gap: 140px;                /* afstand mellem kolonnerne - gap for at justere */
+  flex-direction: row;      
+  gap: 140px;               
   align-items: flex-start;
   justify-content: center;
   background: transparent;
   box-sizing: border-box;
 }
 
-/* hver kolonne stables internt lodret */
 .footer-column {
- min-width: 220px;          /* sikrer at kolonnerne får passende bredde */
+ min-width: 220px;          
  display: flex;
  flex-direction: column;
  align-items: flex-start;
@@ -823,7 +810,7 @@ box-sizing: border-box;
  list-style: none;
  margin: 0;
  padding: 0;
- display: block !important;   /* tvinger vertikal opførsel */
+ display: block !important;   
 }
 
 
@@ -1270,3 +1257,81 @@ bottom: 80%;
   margin: 20px 0;
   color: #212427;
 }
+
+   .slider-container {
+      max-width: 600px;
+      text-align: center;
+      position: relative;
+      padding: 10px;
+      border: #212427 solid 1px;
+      border-radius: 10%;
+    }
+
+    .main-image img {
+      width: 80%;
+      border-radius: 12px;
+    }
+
+    .thumbnail {
+      margin-top: 10px;
+      width: 120px;
+      height: auto;
+      opacity: 0.6;
+      cursor: pointer;
+      border: 2px solid transparent;
+      border-radius: 8px;
+    }
+
+    .thumbnail.active {
+      opacity: 1;
+      border-color: #ff7f7f;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 40%;
+      font-size: 1.5rem;
+      background: rgba(0,0,0,0.4);
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 0.3em 0.6em;
+      border-radius: 50%;
+    }
+
+    .arrow.left {
+      left: 20px;
+    }
+    .arrow.right {
+      right: 20px;
+    }
+
+
+    .product-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .slider-container, .information-container {
+      flex: 1;
+    }
+
+  
+    .information-container {
+      margin-left: 100px;
+    }
+
+    .information-container ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+
+
+    .information-container li {
+      margin-top: 10px;
+    }
+ 
+

@@ -3,12 +3,18 @@
 
 
 
-
+:root {
+  --color-bg: #e0dad0;
+  --color-dark: #212427;
+  --color-light: #F5F4F0;
+  --color-accent: #ff7f7f;
+  --color-footer: #c3b9a7;
+}
 
 body {
   margin: 60px 60px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: #e0dad0;
+  background-color: var(--color-bg);
 }
 
 .video-container {
@@ -107,8 +113,8 @@ h2 {
   padding: 14px 30px;
   background: none;
   border-radius: 20px;
-  background-color: #212427;
-  color: #F5F4F0;
+  background-color: var(--color-dark);
+  color: var(--color-light);
   border: none;
   font-weight: bolder;
   cursor: pointer;
@@ -136,8 +142,6 @@ h2 {
   pointer-events: none;
   z-index: 1;
 }
-
-
 
 
 .forskellige-farver {
@@ -194,8 +198,12 @@ h2 {
 }
 
 .reviews-container {
+  padding: 20px;
    margin-top: 35%;
+   margin-bottom: 8%;
    text-align: center;
+   border: var(--color-dark) solid 1px;
+    border-radius: 100px;
 }
 
 .reviews-container img {
@@ -273,15 +281,25 @@ box-sizing: border-box;
 }
 
 
-
-
 .instagram-feed {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 80px;
-  margin-top: 50px;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items:center;
+  width: 100%;
+  margin-top: 40px;
 }
+
+
+.instagram-feed h3 {
+  margin: 50px 0;
+}
+
+.insta-feed {
+  margin: 20px 50px;
+
+}
+
 
 .specifikationer-container {
   display: flex;
@@ -289,21 +307,14 @@ box-sizing: border-box;
   align-items: center;
   gap: 50px;
   margin-top: 50px;
+  border: var(--color-dark) solid 1px;
+      border-radius: 100px;
+
 }
 
 .insta-feed {
   height: 460px;
   width: 400px;
-}
-
-h3 {
-  margin: 60px 0;
-  margin-bottom: 20px;
-  font-size: 25px;
-  font-weight:300;
-  line-height: 35px;
-  letter-spacing: 2px;
-  text-align: center;
 }
 
 
@@ -352,11 +363,10 @@ box-sizing: border-box;
 }
 
 .column-list li {
-  display: block !important;   /* hver li bliver en blok på egen linje */
-  margin: 10px 0;              /* afstand mellem links */
+  display: block !important;   
+  margin: 10px 0;              
 }
 
-/* gør links til blokniveau så de ikke flyder ved siden af hinanden */
 .column-list li a {
   display: block !important;
   text-decoration: none;
@@ -378,7 +388,7 @@ box-sizing: border-box;
 }
 .product-spec {
   margin-right: 0px;
-  margin-top: 30px;
+  margin-top: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -386,8 +396,8 @@ box-sizing: border-box;
   width: 100%;
    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3); 
   border-radius: 20px;
-  padding: 50px 0;
-  background: linear-gradient(180deg, #e0dad0 0%, #eaeaea 100%);
+  padding: 10px 0;
+  background: linear-gradient(180deg, var(--color-bg) 0%, #eaeaea 100%);
 }
 
 .product-container {
@@ -448,7 +458,7 @@ bottom: 80%;
 .spec-text img {
   width: 10px;  
   height: 10px;
-  background-color:#212427;
+  background-color: var(--color-dark);
   color: white;
   padding: 3px;
   border-radius: 10px;
@@ -463,7 +473,7 @@ bottom: 80%;
   width: 10px;             
   height: 10px;
   background: transparent;  
-  border: 2px solid #212427; 
+  border: 2px solid var(--color-dark); 
   border-radius: 50%;      
   transform: translate(-50%, -50%); 
 }
@@ -477,7 +487,7 @@ bottom: 80%;
           transform: translate(-50%, -50%); 
   
   height: 5px;
-  background:#212427; 
+  background:var(--color-dark); 
 }
 
 
@@ -517,7 +527,7 @@ bottom: 80%;
   width: 10px;             
   height: 10px;
   background: transparent;  
-  border: 2px solid #212427; 
+  border: 2px solid var(--color-dark); 
   border-radius: 50%;      
   transform: translate(-50%, -50%); 
 }
@@ -531,7 +541,7 @@ bottom: 80%;
           transform: translate(-50%, -50%); 
   
   height: 5px;
-  background:#212427; 
+  background: var(--color-dark); 
 }
 
 
@@ -566,7 +576,7 @@ bottom: 80%;
   width: 10px;             
   height: 10px;
   background: transparent;  
-  border: 2px solid #212427; 
+  border: 2px solid var(--color-dark); 
   border-radius: 50%;      
   transform: translate(-50%, -50%); 
 }
@@ -580,7 +590,7 @@ bottom: 80%;
           transform: translate(-50%, -50%); 
   
   height: 5px;
-  background:#212427; 
+  background:var(--color-dark); 
 }
 
 #feature_text_3 .spec-icon {
@@ -634,7 +644,7 @@ bottom: 80%;
   width: 10px;             
   height: 10px;
   background: transparent;  
-  border: 2px solid #212427; 
+  border: 2px solid var(--color-dark); 
   border-radius: 50%;      
   transform: translate(-50%, -50%); 
 }
@@ -648,7 +658,7 @@ bottom: 80%;
           transform: translate(-50%, -50%); 
   
   height: 5px;
-  background:#212427; 
+  background:var(--color-dark); 
 }
 
 .feature__text {
@@ -663,7 +673,7 @@ bottom: 80%;
   background: #f8f5f4;
   padding: 48px 0px;
   width: 100%;
-  margin-top: 80px;        /*afstand til Trustpilot reviews*/
+  margin-top: 80px;       
 
 position: relative;
 left: 50%;
@@ -675,59 +685,53 @@ width: 100vw;
 box-sizing: border-box;
 }
 
-/* centreret indre blok der holder kolonnerne */
 .footer-inner {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
-  flex-direction: row;       /* to kolonner ved siden af hinanden */
-  gap: 140px;                /* afstand mellem kolonnerne - gap for at justere */
+  flex-direction: row;       
+  gap: 140px;             
   align-items: flex-start;
   justify-content: center;
   background: transparent;
   box-sizing: border-box;
 }
 
-/* hver kolonne stables internt lodret */
 .footer-column {
-  min-width: 220px;          /* sikrer at kolonnerne får passende bredde */
+  min-width: 220px;        
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
 }
 
-/* OVERRIDES for at forhindre global CSS i at lave inline/horisontalt flow */
 .column-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: block !important;   /* tvinger vertikal opførsel */
+  display: block !important;   
 }
 
 .column-list li {
-  display: block !important;   /* hver li bliver en blok på egen linje */
-  margin: 10px 0;              /* afstand mellem links */
+  display: block !important;  
+  margin: 10px 0;             
 }
 
-/* gør links til blokniveau så de ikke flyder ved siden af hinanden */
 .column-list li a {
   display: block !important;
   text-decoration: none;
   color: #000;
-  font-size: 18px;            /* justér fontstørrelsen */
+  font-size: 18px;            
   line-height: 1.2;
 }
 
-/* overskriftstyling */
 .footer-column h4 {
   font-size: 24px;
   font-weight: 700;
   margin: 0 0 18px;
 }
 
-/* hover */
 .column-list li a:hover {
   text-decoration: underline;
 }
@@ -735,13 +739,7 @@ box-sizing: border-box;
 
 
 
-.instagram-feed {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 80px;
-  margin-top: 50px;
-}
+
 
 .specifikationer-container {
   display: flex;
@@ -751,14 +749,10 @@ box-sizing: border-box;
   margin-top: 50px;
 }
 
-.insta-feed {
-  height: 460px;
-  width: 400px;
-}
 
 h3 {
   margin: 60px 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 25px;
   font-weight:300;
   line-height: 35px;
@@ -769,7 +763,7 @@ h3 {
 
 
 .site-footer {
-  background: #c3b9a7;
+  background: var(--color-footer);
   padding: 48px 0px;
   width: 100%;
   margin-top: 80px;       
@@ -815,12 +809,11 @@ box-sizing: border-box;
 
 
 .column-list li {
- display: block !important;   /* hver li bliver en blok på egen linje */
- margin: 10px 0;              /* afstand mellem links */
+ display: block !important;  
+ margin: 10px 0;             
 }
 
 
-/* gør links til blokniveau så de ikke flyder ved siden af hinanden */
 .column-list li a {
  display: block !important;
  text-decoration: none;
@@ -830,7 +823,6 @@ box-sizing: border-box;
 }
 
 
-/* overskriftstyling */
 .footer-column h4 {
  font-size: 24px;
  font-weight: 700;
@@ -900,7 +892,6 @@ box-sizing: border-box;
 }
 
 
-/* BETALINGSIKONER (venstre bund) */
 .footer-payments {
  grid-area: payments;
  align-self: end;
@@ -918,7 +909,6 @@ box-sizing: border-box;
 }
 
 
-/* SOCIALE MEDIER (højre bund) */
 .footer-social {
  grid-area: social;
  justify-self: end;
@@ -958,7 +948,7 @@ box-sizing: border-box;
    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3); 
   border-radius: 20px;
   padding: 50px 0;
-  background: linear-gradient(180deg, #e0dad0 0%, #eaeaea 100%);
+  background: linear-gradient(180deg, var(--color-bg) 0%, #eaeaea 100%);
 }
 
 .product-container {
@@ -1019,7 +1009,7 @@ bottom: 80%;
 .spec-text img {
   width: 10px;  
   height: 10px;
-  background-color:#212427;
+  background-color:var(--color-dark);
   color: white;
   padding: 3px;
   border-radius: 10px;
@@ -1034,7 +1024,7 @@ bottom: 80%;
   width: 10px;             
   height: 10px;
   background: transparent;  
-  border: 2px solid #212427; 
+  border: 2px solid var(--color-dark); 
   border-radius: 50%;      
   transform: translate(-50%, -50%); 
 }
@@ -1048,7 +1038,7 @@ bottom: 80%;
           transform: translate(-50%, -50%); 
   
   height: 5px;
-  background:#212427; 
+  background:var(--color-dark); 
 }
 
 
@@ -1088,7 +1078,7 @@ bottom: 80%;
   width: 10px;             
   height: 10px;
   background: transparent;  
-  border: 2px solid #212427; 
+  border: 2px solid var(--color-dark); 
   border-radius: 50%;      
   transform: translate(-50%, -50%); 
 }
@@ -1102,7 +1092,7 @@ bottom: 80%;
           transform: translate(-50%, -50%); 
   
   height: 5px;
-  background:#212427; 
+  background:var(--color-dark); 
 }
 
 
@@ -1138,7 +1128,7 @@ bottom: 80%;
   width: 10px;             
   height: 10px;
   background: transparent;  
-  border: 2px solid #212427; 
+  border: 2px solid var(--color-dark); 
   border-radius: 50%;      
   transform: translate(-50%, -50%); 
 }
@@ -1152,7 +1142,7 @@ bottom: 80%;
           transform: translate(-50%, -50%); 
   
   height: 5px;
-  background:#212427; 
+  background:var(--color-dark); 
 }
 
 #feature_text_3 .spec-icon {
@@ -1206,7 +1196,7 @@ bottom: 80%;
   width: 10px;             
   height: 10px;
   background: transparent;  
-  border: 2px solid #212427; 
+  border: 2px solid var(--color-dark); 
   border-radius: 50%;      
   transform: translate(-50%, -50%); 
 }
@@ -1220,7 +1210,7 @@ bottom: 80%;
           transform: translate(-50%, -50%); 
   
   height: 5px;
-  background:#212427; 
+  background:var(--color-dark); 
 }
 
 .feature__text {
@@ -1230,12 +1220,11 @@ bottom: 80%;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* hover */
 .column-list li a:hover {
   text-decoration: underline;
 }
 .fragtoggaranti {
-  margin-top: 250px; /* behold hvis du vil have højden */
+  margin-top: 250px; 
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
@@ -1255,7 +1244,7 @@ bottom: 80%;
   font-size: 25px;
   font-weight: 700;
   margin: 20px 0;
-  color: #212427;
+  color: var(--color-dark);
 }
 
    .slider-container {
@@ -1263,7 +1252,7 @@ bottom: 80%;
       text-align: center;
       position: relative;
       padding: 10px;
-      border: #212427 solid 1px;
+      border: var(--color-dark) solid 1px;
       border-radius: 10%;
     }
 
@@ -1284,7 +1273,7 @@ bottom: 80%;
 
     .thumbnail.active {
       opacity: 1;
-      border-color: #ff7f7f;
+      border-color: var(--color-accent);
     }
 
     .arrow {
@@ -1312,6 +1301,12 @@ bottom: 80%;
       justify-content: center;
       align-items: center;
       margin-top: 50px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15); 
+      padding: 50px;
+      border-radius: 50px;
+        background: linear-gradient(180deg, var(--color-bg) 0%, #eaeaea 100%);
+
+      
     }
 
     .slider-container, .information-container {
@@ -1321,6 +1316,7 @@ bottom: 80%;
   
     .information-container {
       margin-left: 100px;
+
     }
 
     .information-container ul {

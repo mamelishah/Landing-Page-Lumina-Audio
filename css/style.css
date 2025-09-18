@@ -303,6 +303,89 @@ box-sizing: border-box;
   width: 400px;
 }
 
+h3 {
+  margin: 60px 0;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight:300;
+  line-height: 35px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+{box-sizing: border-box; }
+
+.site-footer {
+  background: #f8f5f4;
+  padding: 48px 0px;
+  width: 100%;
+  margin-top: 80px;        /*afstand til Trustpilot reviews*/
+
+position: relative;
+left: 50%;
+right: 50%;
+margin-left: -50vw;
+margin-right: -50vw;
+width: 100vw;
+
+box-sizing: border-box;
+}
+
+/* centreret indre blok der holder kolonnerne */
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;       /* to kolonner ved siden af hinanden */
+  gap: 140px;                /* afstand mellem kolonnerne - gap for at justere */
+  align-items: flex-start;
+  justify-content: center;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+/* hver kolonne stables internt lodret */
+.footer-column {
+  min-width: 220px;          /* sikrer at kolonnerne får passende bredde */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.column-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block !important;   /* tvinger vertikal opførsel */
+}
+
+.column-list li {
+  display: block !important;   /* hver li bliver en blok på egen linje */
+  margin: 10px 0;              /* afstand mellem links */
+}
+
+/* gør links til blokniveau så de ikke flyder ved siden af hinanden */
+.column-list li a {
+  display: block !important;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;          
+  line-height: 1.2;
+}
+
+/* overskriftstyling */
+.footer-column h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 18px;
+}
+
+/* hover */
+.column-list li a:hover {
+  text-decoration: underline;
+}
 .product-spec {
   margin-right: 0px;
   margin-top: 30px;

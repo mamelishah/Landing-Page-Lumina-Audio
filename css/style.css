@@ -1263,3 +1263,10 @@ bottom: 80%;
   max-width: none;
   }
 
+
+  .price {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 20px 0;
+  color: #212427;
+}
